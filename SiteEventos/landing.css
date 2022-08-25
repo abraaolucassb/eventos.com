@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 0;
+    outline: 0;
+}
+body{
+    background-color: rgb(116, 0, 214);
+
+}
+.container{
+    max-width: 1400px;
+    display: block;
+    margin: 0 auto;
+    padding: 0 3%;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+header .menu-icon{
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+nav{
+    position: relative;
+}
+nav .menu-list{
+    list-style: none;
+}
+nav .menu-list .close-icon{
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    display: none;
+}
+nav.active .menu-list{
+    transform: translateX(0);
+}
+nav .menu-list li{
+    display: inline-block;
+    padding: 20px;
+    font-size: 20px;
+}
+nav .menu-list a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+nav .menu-list a:hover{
+    color: rgb(231, 191, 241);
+}
+main{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+main .main__left{
+    color: white;
+    width: 50%;
+    padding: 20px;
+}
+main .main__left h1{
+    font-size: 4rem;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+main .main__left p{
+    font-size: 22px;
+    margin: 40px 0;
+}
+main .main__left-btn button{
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 20px;
+    font-weight: 500;
+    box-shadow: 0 20px 35px rgb(0, 0, 0,10%), 0 15px 12px rgb(0, 0, 0,8%);
+}
+main .main__left-btn button:nth-child(1){
+    background: rgb(192, 115, 255);
+    color: rgb(19, 6, 42);
+    transition: all 0.5s;
+}
